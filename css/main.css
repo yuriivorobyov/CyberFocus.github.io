@@ -835,7 +835,7 @@ color: #F3F3E9;
 .foto2
 {
 	max-width: 100%;
-		width: 362px;
+		width: 460px;
 	height: 330px;
 	background: url("loby3.jpg") center no-repeat;
   -webkit-background-size: cover;
@@ -889,6 +889,7 @@ font-size: 14px;
 line-height: 20px;
 letter-spacing: 0.1em;
 color: #F3F3E9;
+
 }
 .footer
 {
