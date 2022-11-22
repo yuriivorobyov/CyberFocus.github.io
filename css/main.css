@@ -1,0 +1,985 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+.wrapper_burger{ 
+  display: none; 
+}
+
+.wrapper_burger{
+	margin: 0 0;
+	width: 65px;
+	position: absolute;
+	color: fuchsia;
+	text-align: center;
+	height: 45px;
+	font-family: 'Arial';
+    top: 18px;
+    cursor: pointer;
+    color: white;
+}
+
+#check-menu{
+	display: none;
+}
+
+label{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 45px;
+	height: 100%;
+	cursor: pointer;
+	line-height: 85px;
+}
+
+.burger-line{
+	position: absolute;
+	top: 6px;
+	left: 20px;
+	width: 45px;
+	height: 3px;
+	background-color: white;
+
+}
+
+.second, .third{
+top: 16px;
+}
+
+.fourth{
+	top: 28px;
+}
+
+.main-menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	transform: translateY(100%);
+	max-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	transition: .5s all;
+	
+}
+
+.navigation{
+	
+	display: block;
+	width: 300px;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	border-top: 1px solid #000;
+	background-color: purple;
+	opacity: 0.55;
+	
+}
+.navigation:hover{
+	color: fuchsia;
+}
+
+#check-menu:checked ~ .main-menu{
+width: 600px;
+max-height: 800px;
+font-size: 18px;
+font-weight: 600;
+}
+
+#check-menu:checked ~ .first{
+	display: none;
+}
+
+#check-menu:checked ~ .second{
+transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third{
+transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth{
+	display: none;
+}
+.header
+{
+width: 100%;
+height: 670px;
+left: 0px;
+top: 0px;
+
+}
+
+
+
+.video12
+{
+ width: 100%;
+ height: 670px;
+ object-fit: cover;
+}
+
+.header_inner
+{
+  width: 100% - 4px;
+  height: 670px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: right;
+  align-content: space-between;
+  align-items: space-between;
+  
+}
+
+.h1
+{
+max-width: 100%;
+width: 400px;
+height: 100px;
+background: url("logosite.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+border: 4px solid;
+position: absolute;
+transform : translate(-0px, -675px);
+object-fit: cover;
+}
+
+
+.h2
+{
+max-width: 100%;
+width: 350px;
+height: 100px;
+background: ;
+border-radius: 41px;
+text-align: center;
+font-family: 'serif';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+font-variant: small-caps;
+line-height: 100px;
+letter-spacing: 0em;
+transform : translate(0px, -670px);
+object-fit: cover;
+
+}
+.h3
+{
+max-width: 100%;
+width: 350px;
+height: 100px;
+background: ;
+border-radius: 41px;
+text-align: center;
+font-family: 'serif';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+font-variant: small-caps;
+line-height: 100px;
+letter-spacing: 0em;
+transform : translate(120px, -670px);
+object-fit: cover;
+
+}
+.h4
+{
+max-width: 100%;
+width: 350px;
+height: 100px;
+background: ;
+border-radius: 41px;
+text-align: center;
+font-family: 'serif';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+font-variant: small-caps;
+line-height: 100px;
+letter-spacing: 0em;
+transform : translate(0px, -670px);
+object-fit: cover;
+}
+
+.main
+{
+width: 100%;
+height: 3000x;
+left: 0px;
+top: 0px;
+background: url("mainphoto.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+
+}
+.main_inner
+{
+  width: 100% - 5px;
+  height: 325px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.club1
+{
+	max-width: 100%;
+	width: 500px;
+	height: 300px;
+	border-radius: 60px;
+	border: 1px solid;
+}
+
+
+.img1
+{
+max-width: 100%;
+width: 500px;
+height: 300px;
+border-radius: 60px;
+object-fit: cover;
+}
+.fototxt
+{
+	width: 100% - 5px;
+  height: 770px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+
+.foto
+{
+	max-width: 100%;
+	width: 1700px;
+	height: 755px;
+	background: url("loby1.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+}
+
+
+
+.txt1
+{
+	max-width: 100%;
+	width: 470px;
+	height: 755px;
+
+	
+}
+
+.buttom-txt1
+{
+	position: ;
+	max-width: 100%;
+	width: 470px;
+	height: 70px;
+	transform : translate(0px, 650px);
+	background: #1E1E1E;
+	border-radius: 41px;
+	font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+border: 0px;
+
+letter-spacing: 0.1em;
+
+color: #BF70AE;
+	
+
+}
+.txtPC1
+{
+	position: ;
+	max-width: 100%;
+	width: 450px;
+	height: 650px;
+	transform : translate(10px, -40px);
+	border: 0px ;
+font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 32px;
+letter-spacing: 0.1em;
+color: #F3F3E9;
+
+
+}
+.fototxt1
+{
+	width: 100% - 5px;
+  height: 770px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.foto1
+{
+	max-width: 100%;
+	width: 1700px;
+	height: 755px;
+	background: url("loby2.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+	
+}
+
+
+
+.txt2
+{
+	max-width: 100%;
+	width: 470px;
+	height: 755px;
+	
+}
+
+.buttom-txt2
+{
+	position: ;
+	max-width: 100%;
+	width: 470px;
+	height: 70px;
+	transform : translate(0px, 700px);
+	background: #1E1E1E;
+	border-radius: 41px;
+	font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+border: 0px;
+
+letter-spacing: 0.1em;
+
+color: #BF70AE;
+}
+.txtPC2
+{
+	position: ;
+	max-width: 100%;
+	width: 450px;
+	height: 650px;
+	transform : translate(10px, -40px);
+	border: 0px ;
+font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 32px;
+letter-spacing: 0.1em;
+color: #F3F3E9;
+
+}
+.fototxt2
+{
+	width: 100% - 5px;
+  height: 800px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.foto2
+{
+	max-width: 100%;
+	width: 1700px;
+	height: 755px;
+	background: url("loby3.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+	
+}
+
+
+
+.txt3
+{
+	max-width: 100%;
+	width: 470px;
+	height: 755px;
+	
+}
+
+.buttom-txt3
+{
+	position: ;
+	max-width: 100%;
+	width: 470px;
+	height: 70px;
+	transform : translate(0px, 700px);
+	background: #1E1E1E;
+	border-radius: 41px;
+	font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 24px;
+border: 0px;
+
+letter-spacing: 0.1em;
+
+color: #BF70AE;
+}
+.txtPC3
+{
+	position: ;
+	max-width: 100%;
+	width: 450px;
+	height: 650px;
+	transform : translate(10px, -40px);
+	border: 0px ;
+font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 32px;
+letter-spacing: 0.1em;
+color: #F3F3E9;
+
+
+}
+
+.footer
+{
+width: 100%;
+height: 3000x;
+left: 0px;
+top: 0px;
+background: grey;
+}
+
+.footer_inner
+{
+  width: 100% - 4px;
+  height: 250px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.foot1
+{
+	max-width: 100%;
+width: 500px;
+height: 130px;
+background: url("logosite.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+border: 4px solid;
+}
+.foot2
+{
+	transform : translate(-100px, 0px);
+	max-width: 100%;
+width: 300px;
+height: 138px;
+border: 0px solid;
+font-family: 'Akaya Kanadaka';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+letter-spacing: 0.1em;
+
+color: #FFAC33;
+}
+.foot3
+{
+	transform : translate(120px, 0px);
+	max-width: 100%;
+width: 100px;
+height: 100px;
+background: white;
+border-radius: 30px;
+background: url("insta.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+  fill: solid;
+}
+.foot4
+{
+	max-width: 100%;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+background: url("twitter.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+}
+.foot5
+{
+	transform : translate(-140px, 10px);
+	max-width: 100%;
+width: 170px;
+height: 170px;
+background: url("dis.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+
+@media (max-width: 800px) { 
+.video12
+{
+ width: 1920px;
+ height: 670px;
+ object-fit: fill;
+ display: none;
+}
+.header 
+{
+width: 100%;
+height: 240px;
+left: 0px;
+top: 0px;
+background: url("headerphoto.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+}
+.header_inner
+{
+	width: 100% - 4px;
+  height: 50px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: space-between;
+  
+}
+.h1
+{
+max-width: 100%;
+width: 45px;
+height: 45px;
+background: url("logosmall.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+border: 4px solid;
+transform : translate(650px, 0px);
+}
+.h2
+{
+display: none;
+}
+.main
+{
+width: 100%;
+height: 1000x;
+left: 0px;
+top: 0px;
+background: url("mainphoto.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+
+
+}
+.main_inner
+{
+  width: 100% - 5px;
+  height: 140px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+
+}
+.img1
+{
+width: 100%;
+height: 125px;
+border-radius: 45px;
+object-fit: cover;
+}
+
+.club1
+{
+	max-width: 100%;
+	width: 200px;
+	height: 125px;
+	border-radius: 45px;
+}
+
+
+
+.fototxt
+{
+	width: 100% - 5px;
+  height: 330px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+
+.foto
+{
+	max-width: 100%;
+		width: 540px;
+	height: 330px;
+	background: url("loby1.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+
+}
+
+
+
+.txt1
+{
+	max-width: 100%;
+	width: 230px;
+	height: 330px;
+
+	
+}
+
+.buttom-txt1
+{
+	position: ;
+	max-width: 100%;
+	width: 120px;
+	height: 45px;
+	transform : translate(40px, 285px);
+	background: #1E1E1E;
+	border-radius: 41px;
+	font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+border: 0px;
+
+letter-spacing: 0.1em;
+
+color: #BF70AE;
+	
+
+}
+.txtPC1
+{
+	position: ;
+	max-width: 100%;
+	width: 230px;
+	height: 280px;
+	transform : translate(0px, -40px);
+	border: 0px ;
+font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0.1em;
+color: #F3F3E9;
+
+
+}
+.fototxt1
+{
+	width: 100% - 5px;
+  height: 330px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.foto1
+{
+	max-width: 100%;
+		width: 540px;
+	height: 330px;
+	background: url("loby2.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+	
+}
+
+
+
+.txt2
+{
+	max-width: 100%;
+	width: 230px;
+	height: 330px;
+}
+
+.buttom-txt2
+{
+	position: ;
+	max-width: 100%;
+	width: 120px;
+	height: 45px;
+	transform : translate(40px, 285px);
+	background: #1E1E1E;
+	border-radius: 41px;
+	font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+border: 0px;
+
+letter-spacing: 0.1em;
+
+color: #BF70AE;
+
+
+}
+.txtPC2
+{
+	position: ;
+	max-width: 100%;
+	 width: 230px;
+	height: 280px;
+	transform : translate(0px, -40px);
+	border: 0px ;
+font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.1em;
+color: #F3F3E9;
+
+}
+.fototxt2
+{
+	width: 100% - 5px;
+  height: 330px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.foto2
+{
+	max-width: 100%;
+		width: 362px;
+	height: 330px;
+	background: url("loby3.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+	
+	
+}
+
+
+
+.txt3
+{
+	max-width: 100%;
+	width: 230px;
+	height: 330px;
+	
+}
+
+.buttom-txt3
+{
+	position: ;
+	max-width: 100%;
+	width: 120px;
+	height: 45px;
+	transform : translate(40px, 285px);
+	background: #1E1E1E;
+	border-radius: 41px;
+	font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+border: 0px;
+
+letter-spacing: 0.1em;
+
+color: #BF70AE;
+}
+.txtPC3
+{
+	position: ;
+	max-width: 100%;
+	 width: 230px;
+	height: 280px;
+	transform : translate(0px, -40px);
+	border: 0px ;
+font-family: '?????';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.1em;
+color: #F3F3E9;
+}
+.footer
+{
+width: 100%;
+height: 70x;
+left: 0px;
+top: 0px;
+background: grey;
+}
+
+.footer_inner
+{
+  width: 100% - 4px;
+  height: 70px;
+  border: 0px solid;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+
+.foot1
+{
+	max-width: 100%;
+width: 55px;
+height: 55px;
+background: url("logosmall.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+border: 4px solid;
+transform : translate(-40px, 0px)
+}
+.foot2
+{
+	
+	max-width: 100%;
+width: 165px;
+height: 55px;
+border: 0px solid;
+font-family: 'Akaya Kanadaka';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+letter-spacing: 0.1em;
+
+color: #FFAC33;
+transform : translate(-20px, 0px)
+}
+.foot3
+{
+	transform : translate(0px, 0px);
+	max-width: 100%;
+width: 30px;
+height: 30px;
+background: white;
+border-radius: 30px;
+background: url("insta.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+  fill: solid;
+}
+.foot4
+{
+	max-width: 100%;
+width: 30px;
+height: 30px;
+border-radius: 50px;
+background: url("twitter.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: 0px;
+}
+.foot5
+{
+	transform : translate(0px, 0px);
+	max-width: 100%;
+width: 30px;
+height: 30px;
+background: url("dis.jpg") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.wrapper_burger, .main-menu{ 
+  display: block; 
+}
+}
